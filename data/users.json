@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "username": "hailey",
+        "password": "friedchicken123",
+        "email": "hai.jar@gmail.com"
+    },
+    {
+        "id": 2,
+        "username": "maree",
+        "password": "icecream456",
+        "email": "ice.cream@gmail.com"
+    }
+]
