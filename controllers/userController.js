@@ -1,7 +1,6 @@
 const users = require('../data/users.json');
 const jwt = require('jsonwebtoken');
 
-
 const JWT_SECRET = 'mysecretkey';
 
 exports.register = (req, res) => {
@@ -12,7 +11,7 @@ exports.register = (req, res) => {
     }
     const userExists = users.find(user => user.email === email);
     if (userExists) {
-        return res.status(400).json({ message: 'User already exists.' });
+        return res.status(400).json({ message: 'User already exists' });
     }
 
     const newUser = {
@@ -23,7 +22,7 @@ exports.register = (req, res) => {
     };
 
     users.push(newUser);
-    res.status(201).json({ message: 'User registered successfully', user: newUser });
+    res.status(201).json({ message: 'User is now registered', user: newUser });
 };
 
 //login
